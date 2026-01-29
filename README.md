@@ -39,25 +39,8 @@ Abre el navegador en:
 http://localhost:8888
 ```
 ### 5. Ejecutar el primer notebook
-Abre:
-```ruby
-notebooks/00_setup.ipynb
-```
-Pega este código:
-
-
-```ruby
----
-
-## Estructura del proyecto
-- docker/: entorno reproducible
-- notebooks/: pipeline de simulación
-- data/: datos de entrada
-- results/: resultados
-- src/: módulos reutilizables
-
----
-```
+Abra el notebook ```ruby notebooks/00_setup.ipynb``` y ejecute todas las celdas.
+Si se ejecuta sin errores críticos, el entorno está correctamente configurado.
 
 ## Licencia
 Uso académico.

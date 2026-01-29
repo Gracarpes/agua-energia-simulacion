@@ -18,23 +18,23 @@ NO es necesario instalar Python ni librerías científicas en el ordenador.
 ## Puesta en marcha (5 minutos)
 
 ### 1. Descargar el proyecto
-Pulsa en **Code → Download ZIP** y descomprime el archivo.
+Pulse en **Code → Download ZIP** y descomprima el archivo.
 
 ### 2. Configurar Copernicus (ERA5)
-Copia el archivo:
+Copie el archivo:
 ```ruby
 config/cdsapirc.example → config/cdsapirc
 ```
-y edita `config/cdsapirc` con tus credenciales del Climate Data Store.
+y edite `config/cdsapirc` con sus credenciales del Climate Data Store.
 
 ### 3. Arrancar el entorno
-Abre una terminal en la carpeta del proyecto y ejecuta:
+Abra una terminal en la carpeta del proyecto y ejecute:
 ```ruby
 cd docker
 docker compose up --build
 ```
 ### 4. Abrir Jupyter
-Abre el navegador en:
+Abra el navegador en:
 ```ruby
 http://localhost:8888
 ```

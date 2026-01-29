@@ -1,0 +1,25 @@
+# Núcleo científico
+numpy
+pandas
+matplotlib
+
+# Formatos y rendimiento
+pyarrow
+fastparquet
+
+# Solar
+pvlib
+
+# ERA5 / Copernicus
+cdsapi
+xarray
+netcdf4
+
+# Utilidades
+python-dateutil
+pytz
+pyyaml
+tqdm
+
+# Interactividad en Jupyter
+ipywidgets

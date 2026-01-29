@@ -1,0 +1,13 @@
+# Credenciales reales
+config/cdsapirc
+
+# Datos grandes
+data/raw/
+data/interim/
+
+# Resultados
+results/
+
+# Jupyter
+.ipynb_checkpoints/
+__pycache__/

@@ -1,0 +1,23 @@
+services:
+  jupyter:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: tesis_jupyter
+    ports:
+      - "${NOTEBOOK_PORT:-8888}:8888"
+    environment:
+      - TZ=Europe/Madrid
+      - JUPYTER_ENABLE_LAB=yes
+      # Directorios “canónicos” dentro del contenedor
+      - PROJECT_DIR=/home/jovyan/work
+      - DATA_DIR=/home/jovyan/work/data
+      - RESULTS_DIR=/home/jovyan/work/results
+    volumes:
+      # Proyecto (persistente)
+      - ../:/home/jovyan/work
+
+      # Credenciales CDS: se montan como ~/.cdsapirc (solo lectura)
+      - ../config/cdsapirc:/home/jovyan/.cdsapirc:ro
+
+    restart: unless-stopped

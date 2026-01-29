@@ -6,6 +6,7 @@ services:
     container_name: tesis_jupyter
     ports:
       - "${NOTEBOOK_PORT:-8888}:8888"
+    working_dir: /home/jovyan/work
     environment:
       - TZ=Europe/Madrid
       - JUPYTER_ENABLE_LAB=yes

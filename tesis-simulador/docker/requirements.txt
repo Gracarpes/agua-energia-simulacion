@@ -1,6 +1,7 @@
 # Núcleo científico
 numpy
-pandas
+pandas>=2.0
+openpyxl>=3.1.5
 matplotlib
 
 # Formatos y rendimiento

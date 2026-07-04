@@ -1,0 +1,191 @@
+{
+  "file": "../data/processed/demand/Parametros_electricos2023_8760o8784.parquet",
+  "timezone": "Europe/Madrid",
+  "expected_freq": "h",
+  "n_rows_raw": 8760,
+  "start": "2023-01-01 01:00:00+01:00",
+  "end": "2024-01-01 00:00:00+01:00",
+  "temporal": {
+    "n_duplicate_timestamps": 2,
+    "n_expected": 8760,
+    "n_present": 8759,
+    "n_missing": 1,
+    "missing_sample": [
+      "2023-10-29 02:00:00+02:00"
+    ],
+    "n_non_1h_steps": 1,
+    "non_1h_steps_sample": [
+      {
+        "at": "2023-10-29 02:00:00+01:00",
+        "delta": "0 days 02:00:00"
+      }
+    ],
+    "dst_expected_23h_days": [
+      "2023-03-26 00:00:00+01:00"
+    ],
+    "dst_expected_25h_days": [
+      "2023-10-29 00:00:00+02:00"
+    ]
+  },
+  "variables": {
+    "energy_col": "E_E",
+    "flow_col": "Caudal",
+    "flow_units": "L/s"
+  },
+  "quality": {
+    "E_E": {
+      "n_nan": 0,
+      "nan_ratio": 0.0,
+      "n_negative": 0,
+      "negative_sample": [],
+      "stats": {
+        "n": 8759,
+        "min": 0.0,
+        "p01": 328.0,
+        "p05": 352.0,
+        "median": 449.0,
+        "mean": 479.412147505423,
+        "p95": 645.0,
+        "p99": 677.0,
+        "max": 756.0,
+        "std": 98.97404638310613
+      },
+      "range": {
+        "vmin": 0.0,
+        "vmax": null,
+        "n_below_min": 0,
+        "sample_below_min": [],
+        "n_above_max": 0,
+        "sample_above_max": []
+      }
+    },
+    "Caudal_Ls": {
+      "n_nan": 0,
+      "nan_ratio": 0.0,
+      "n_negative": 0,
+      "negative_sample": [],
+      "stats": {
+        "n": 8759,
+        "min": 742.0,
+        "p01": 1029.58,
+        "p05": 1189.0,
+        "median": 2241.0,
+        "mean": 2124.4961753624843,
+        "p95": 2887.0,
+        "p99": 3143.84,
+        "max": 3494.0,
+        "std": 544.6543508463964
+      },
+      "range": {
+        "vmin": 0.0,
+        "vmax": 50000.0,
+        "n_below_min": 0,
+        "sample_below_min": [],
+        "n_above_max": 0,
+        "sample_above_max": []
+      }
+    },
+    "Caudal_nan_timestamps_sample": []
+  },
+  "metrics": {
+    "integral_nan_policy": "drop (NaN ignorados en suma)",
+    "energy_total_kwh": 4199171.0,
+    "flow_total_m3": 66990463.2,
+    "flow_conversion": "m3_per_hour = Caudal_Ls * 3.6; total_m3 = sum(m3_per_hour)",
+    "specific_consumption_kwh_per_m3": 0.06268311636334528,
+    "energy_hourly_stats_kwh": {
+      "n": 8759,
+      "min": 0.0,
+      "p01": 328.0,
+      "p05": 352.0,
+      "median": 449.0,
+      "mean": 479.412147505423,
+      "p95": 645.0,
+      "p99": 677.0,
+      "max": 756.0,
+      "std": 98.97404638310613
+    },
+    "flow_hourly_stats_Ls": {
+      "n": 8759,
+      "min": 742.0,
+      "p01": 1029.58,
+      "p05": 1189.0,
+      "median": 2241.0,
+      "mean": 2124.4961753624843,
+      "p95": 2887.0,
+      "p99": 3143.84,
+      "max": 3494.0,
+      "std": 544.6543508463964
+    },
+    "volume_hourly_stats_m3h": {
+      "n": 8759,
+      "min": 2671.2000000000003,
+      "p01": 3706.488,
+      "p05": 4280.400000000001,
+      "median": 8067.6,
+      "mean": 7648.186231304944,
+      "p95": 10393.2,
+      "p99": 11317.824,
+      "max": 12578.4,
+      "std": 1960.7556630470272
+    },
+    "energy_daily_kwh_stats": {
+      "n": 366,
+      "min": 396.0,
+      "p01": 8299.6,
+      "p05": 8928.0,
+      "median": 10680.5,
+      "mean": 11473.144808743169,
+      "p95": 15072.5,
+      "p99": 15497.1,
+      "max": 15767.0,
+      "std": 2258.7419454716937
+    },
+    "volume_daily_m3_stats": {
+      "n": 366,
+      "min": 6321.6,
+      "p01": 153908.1,
+      "p05": 162396.90000000002,
+      "median": 184107.6,
+      "mean": 183034.05245901638,
+      "p95": 200486.7,
+      "p99": 205492.50000000003,
+      "max": 208260.0,
+      "std": 14663.724114120756
+    },
+    "energy_monthly_kwh_stats": {
+      "n": 13,
+      "min": 396.0,
+      "p01": 34439.04,
+      "p05": 170611.2,
+      "median": 333794.0,
+      "mean": 323013.1538461539,
+      "p95": 442320.0,
+      "p99": 445888.8,
+      "max": 446781.0,
+      "std": 113550.8892023353
+    },
+    "volume_monthly_m3_stats": {
+      "n": 13,
+      "min": 6321.6,
+      "p01": 611752.3200000001,
+      "p05": 3033475.2000000007,
+      "median": 5601799.8,
+      "mean": 5153112.553846154,
+      "p95": 5899797.36,
+      "p99": 5910301.872,
+      "max": 5912928.0,
+      "std": 1562740.2718377062
+    }
+  },
+  "flags": {
+    "no_duplicate_timestamps": false,
+    "no_missing_hours": false,
+    "has_nan_flow": false,
+    "has_nan_energy": false,
+    "flow_no_negatives": true,
+    "energy_no_negatives": true,
+    "flow_range_ok": true,
+    "energy_range_ok": true
+  }
+}

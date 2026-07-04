@@ -1,0 +1,23 @@
+{
+  "Name": "Canadian_Solar_CS6.2_66TM_635W",
+  "Date": "2024-01-01",
+  "BIPV": "N",
+  "Technology": "Mono TOPCon",
+  "A_c": 2.702,
+  "N_s": 66,
+  "I_sc_ref": 16.22,
+  "V_oc_ref": 49.4,
+  "I_mp_ref": 15.18,
+  "V_mp_ref": 41.9,
+  "alpha_sc": 0.007298999999999999,
+  "beta_oc": -0.1235,
+  "gamma_r": -1.8415,
+  "a_ref": 1.89,
+  "I_L_ref": 16.22,
+  "I_o_ref": 8e-11,
+  "R_s": 0.13,
+  "R_sh_ref": 295,
+  "Adjust": 0,
+  "STC": 635,
+  "PTC": 585
+}

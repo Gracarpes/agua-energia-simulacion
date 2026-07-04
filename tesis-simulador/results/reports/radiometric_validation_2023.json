@@ -1,0 +1,43 @@
+{
+  "radiometric_validation": {
+    "formula": "GHI_rec = DNI*cos(zenith) + DHI",
+    "tz": "Europe/Madrid",
+    "columns": {
+      "ghi": "ghi",
+      "dni": "dni",
+      "dhi": "dhi",
+      "pressure": "pressure"
+    },
+    "settings": {
+      "zenith_max_deg": 89.0,
+      "min_ghi_wm2_day_useful": 10.0,
+      "sample_hours_plot": 72
+    },
+    "coverage": {
+      "start": "2023-01-01 01:00:00+01:00",
+      "end": "2024-01-01 00:00:00+01:00",
+      "n_records": 8760,
+      "n_day_useful": 4189
+    },
+    "metrics_all": {
+      "n": 8760,
+      "ME_Wm2": -0.9459418333489287,
+      "MAE_Wm2": 0.9459461794016922,
+      "RMSE_Wm2": 6.492301947041366,
+      "p50_err_Wm2": 0.0,
+      "p95_abs_err_Wm2": 0.00023140202662545994,
+      "p99_abs_err_Wm2": 33.773972702026356,
+      "max_abs_err_Wm2": 80.31411743164062
+    },
+    "metrics_day_useful": {
+      "n": 4189,
+      "ME_Wm2": -6.489605391375387e-05,
+      "MAE_Wm2": 7.398448127315508e-05,
+      "RMSE_Wm2": 0.00010054020466375064,
+      "p50_err_Wm2": -4.6321391039327864e-05,
+      "p95_abs_err_Wm2": 0.000204658111374556,
+      "p99_abs_err_Wm2": 0.00022454431273217777,
+      "max_abs_err_Wm2": 0.0002569389308746395
+    }
+  }
+}

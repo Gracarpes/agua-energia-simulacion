@@ -1,0 +1,13 @@
+{
+  "tCO2_ref": 424.8714409264752,
+  "tCO2_FVBESS": 3.115775337902267,
+  "tCO2_reduction": 421.7556655885729,
+  "reduction_percent": 99.26665455999867,
+  "kgCO2_per_kWh_ref": 0.10116540689763373,
+  "kgCO2_per_kWh_FVBESS": 0.0007418918983425919,
+  "total_load_kWh": 4199770.0,
+  "ci_missing_ratio_before_fill": 0.002740038817216577,
+  "meta": {
+    "timestamp": "2026-03-13T17:08:56.701614"
+  }
+}

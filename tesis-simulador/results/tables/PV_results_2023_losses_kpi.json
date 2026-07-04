@@ -1,0 +1,22 @@
+{
+  "plant_name":"Carambolo (7 inversores, 3 MPPT c\/u)",
+  "atributo_nombre":"losses",
+  "year":2023,
+  "n_inverters":7,
+  "n_points":8760,
+  "timestep_h_est":1.0,
+  "pac_total_w":1750000.0,
+  "ac_energy_mwh":3103.1300934852,
+  "dc_energy_mwh":3201.441439159,
+  "ac_peak_mw":1.541650836,
+  "dc_peak_mw":1.5915887837,
+  "capacity_factor":0.2024220544,
+  "saturation_p50":0.0,
+  "saturation_p95":0.7570595769,
+  "saturation_p99":0.8194992791,
+  "hours_at_ac_limit":0.0,
+  "clipping_energy_mwh_est":0.0,
+  "clipping_pct_of_dc_est":0.0,
+  "dc_ac_ratio_p50":1.0288478697,
+  "dc_ac_ratio_p95":1.2950735753
+}

@@ -1,0 +1,48 @@
+{
+  "period": {
+    "start": "2023-01-01T01:00:00+01:00",
+    "end": "2024-01-01T00:00:00+01:00",
+    "n_points": 8759,
+    "timezone": "Europe/Madrid"
+  },
+  "energies_kWh": {
+    "load_total": 4199770.0,
+    "pv_generated": 3410705.4618418543,
+    "pv_self_consumed_total": 1662501.7247476813,
+    "pv_self_consumed_direct": 1662501.7247476813,
+    "pv_self_consumed_via_batt": 0.0,
+    "grid_import": 2537268.275252319,
+    "grid_export": 1748203.7370941727,
+    "batt_charge_in_AC": 0.0,
+    "batt_charge_stored_useful": 0.0,
+    "batt_discharge_out_AC": 0.0,
+    "batt_discharge_from_useful": 0.0
+  },
+  "battery_kpis": {
+    "cycle_efficiency_AC_out_over_AC_in": NaN,
+    "throughput_AC_kWh": 0.0,
+    "utilization_relative_throughput_over_2Euse": NaN,
+    "equivalent_full_cycles_EFC": NaN,
+    "DoD_equivalent": NaN,
+    "eq_hours_charge_at_Pmax": NaN,
+    "eq_hours_discharge_at_Pmax": NaN,
+    "eq_hours_charge_at_Euse": NaN,
+    "eq_hours_discharge_at_Euse": NaN
+  },
+  "pv_integration_indicators": {
+    "self_consumption_ratio": 0.48743632170744366,
+    "self_sufficiency_ratio": 0.39585542178445043
+  },
+  "theoretical_aging": {
+    "cycle_fade_fraction_per_year": NaN,
+    "calendar_fade_fraction_per_year": 0.01,
+    "total_fade_fraction_per_year": NaN,
+    "assumption": "Modelo 1º orden: degradación cíclica ~ EFC / cycle_life_EFC (ajustar cycle_life_EFC a ficha LiFePO4)."
+  },
+  "assumptions": [
+    "La batería se carga solo con excedente FV (PV_to_Batt). Si se permite carga desde red, hay que desglosar origen.",
+    "SoC llevado en energía útil dentro de [SoCmin*Euse, SoCmax*Euse].",
+    "Rendimientos: carga E_store=E_in*nch; descarga E_from=E_out/ndis.",
+    "Potencia limitada por Pch_max y (si aplica) por Crate*Euse."
+  ]
+}

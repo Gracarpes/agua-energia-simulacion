@@ -1,0 +1,16 @@
+{
+  "year": 2026,
+  "dt_h_est": 1.0,
+  "PV_MWh": 3396.3886149762156,
+  "Load_MWh": 4411.3105,
+  "SelfConsumption_MWh": 1698.085973854829,
+  "GridImport_MWh": 2713.224526145171,
+  "GridExport_MWh": 1695.936991121386,
+  "SelfConsumption_ratio": 0.49996810328688507,
+  "SelfSufficiency_ratio": 0.38493911817244086,
+  "n_points_merged": 8758,
+  "start": "2025-12-31 23:00:00+01:00",
+  "end": "2026-12-31 22:00:00+01:00",
+  "tz": "Europe/Madrid",
+  "dedup_how": "mean"
+}

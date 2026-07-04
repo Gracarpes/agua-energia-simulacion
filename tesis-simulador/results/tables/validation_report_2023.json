@@ -1,0 +1,107 @@
+{
+  "year": "2023",
+  "columns": [
+    "temp_air",
+    "wind_speed",
+    "pressure",
+    "ghi",
+    "dni",
+    "dhi"
+  ],
+  "temporal": {
+    "ok": true,
+    "tz": "UTC",
+    "n_rows": 8760,
+    "start": "2023-01-01 00:00:00+00:00",
+    "end": "2023-12-31 23:00:00+00:00",
+    "n_duplicates": 0,
+    "n_non_1h_steps": 0,
+    "step_counts_top": {
+      "0 days 01:00:00": 8759
+    }
+  },
+  "summary_stats": [
+    {
+      "variable": "temp_air",
+      "min": 0.412017822265625,
+      "p01": 3.220555419921875,
+      "mean": 19.42737750049051,
+      "p99": 37.08954223632812,
+      "max": 39.896881103515625,
+      "n_nan": 0
+    },
+    {
+      "variable": "wind_speed",
+      "min": 0.027323540300130844,
+      "p01": 0.28873175591230393,
+      "mean": 2.3649719009386403,
+      "p99": 6.413251881599422,
+      "max": 10.79205322265625,
+      "n_nan": 0
+    },
+    {
+      "variable": "pressure",
+      "min": 986.8287353515625,
+      "p01": 1000.6540270996094,
+      "mean": 1011.3637115199816,
+      "p99": 1025.9776599121094,
+      "max": 1029.6925048828125,
+      "n_nan": 0
+    },
+    {
+      "variable": "ghi",
+      "min": 0.0,
+      "p01": 0.0,
+      "mean": 219.7019317301428,
+      "p99": 957.0837719726562,
+      "max": 1009.8427734375,
+      "n_nan": 0
+    },
+    {
+      "variable": "dni",
+      "min": 0.0,
+      "p01": 0.0,
+      "mean": 231.47485350814515,
+      "p99": 912.8954115560471,
+      "max": 956.8788856476282,
+      "n_nan": 0
+    },
+    {
+      "variable": "dhi",
+      "min": 0.0,
+      "p01": 0.0,
+      "mean": 79.01869671473297,
+      "p99": 374.70141065635454,
+      "max": 498.50121035740887,
+      "n_nan": 0
+    }
+  ],
+  "quality_indicators": {
+    "n_nan_total": 0,
+    "ghi_min": 0.0,
+    "ghi_max": 1009.8427734375,
+    "ghi_negative_count": 0,
+    "ghi_zero_or_near_zero_pct": 46.9634703196347,
+    "temp_min": 0.412017822265625,
+    "temp_max": 39.896881103515625,
+    "wind_min": 0.027323540300130844,
+    "wind_max": 10.79205322265625,
+    "wind_negative_count": 0,
+    "pressure_units": "hPa",
+    "pressure_min": 986.8287353515625,
+    "pressure_max": 1029.6925048828125
+  },
+  "pvlib_checklist": {
+    "index_is_DatetimeIndex": true,
+    "index_tz_aware": true,
+    "hourly_continuous_no_gaps": true,
+    "no_duplicate_timestamps": true,
+    "required_columns_present": true,
+    "no_missing_values": true,
+    "ghi_non_negative": true,
+    "wind_non_negative": true,
+    "pressure_units_recognized_(hPa_or_Pa)": true,
+    "PVLIB_READY": true
+  },
+  "conclusion": "APTO para uso en pvlib"
+}

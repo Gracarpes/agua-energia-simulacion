@@ -1,0 +1,16 @@
+{
+  "year": 2023,
+  "dt_h_est": 1.0,
+  "PV_MWh": 3410.7054618418542,
+  "Load_MWh": 7102.172452000001,
+  "SelfConsumption_MWh": 2591.2972776751844,
+  "GridImport_MWh": 4510.875174324815,
+  "GridExport_MWh": 817.0372841666692,
+  "SelfConsumption_ratio": 0.7597540469753223,
+  "SelfSufficiency_ratio": 0.36485980806414586,
+  "n_points_merged": 8759,
+  "start": "2023-01-01 01:00:00+01:00",
+  "end": "2024-01-01 00:00:00+01:00",
+  "tz": "Europe/Madrid",
+  "dedup_how": "mean"
+}

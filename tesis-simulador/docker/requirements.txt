@@ -3,6 +3,7 @@ numpy
 pandas>=2.0
 openpyxl>=3.1.5
 matplotlib
+plotly>=5.14
 
 # Formatos y rendimiento
 pyarrow
@@ -21,6 +22,7 @@ python-dateutil
 pytz
 pyyaml
 tqdm
+requests
 
 # Interactividad en Jupyter
 ipywidgets
